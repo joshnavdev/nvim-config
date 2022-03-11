@@ -38,6 +38,13 @@ call plug#begin()
   Plug 'ryanoasis/vim-devicons' " Para mostrar mejores iconos, bug en wsl2 https://github.com/ryanoasis/vim-devicons/issues/366#issuecomment-840235070
   Plug 'preservim/nerdcommenter' " Para comentar usando los comando definidos en la documentacion
   Plug 'dense-analysis/ale' " Para lintear codigo y format usando prettier
+  Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
+  Plug 'itchyny/lightline.vim' "Para customizar el lightline
+  Plug 'caenrique/nvim-toggle-terminal' " Para mostrat y ocultar terminal
+  
+  " TypeScript Highlighting
+  Plug 'leafgarland/typescript-vim'
+  Plug 'peitalin/vim-jsx-typescript'
 
   " Language Client
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -45,6 +52,10 @@ call plug#begin()
 
   "Syntax highlighting
   Plug 'sheerun/vim-polyglot'
+
+  " File Search
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
   " Otros sacados de https://medium.com/geekculture/neovim-configuration-for-beginners-b2116dbbde84
   " Plug 'SirVer/ultisnips'
   " Plug 'honza/vim-snippets'
@@ -86,17 +97,60 @@ let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'
 " Fix files automatically on save
 let g:ale_fix_on_save = 1
-let g:ale_lint_on_text_changed = 1
-let g:ale_lint_on_insert_leave = 0
+" let g:ale_lint_on_text_changed = 1
+let g:ale_lint_on_insert_leave = 1
 let g:ale_fixers['javascript'] = ['eslint']
 nmap <silent> [c <Plug>(ale_previous_wrap)
 nmap <silent> ]c <Plug>(ale_next_wrap)
 nmap <F6> <Plug>(ale_fix)
 " ale configuration end
 
+let g:UltiSnipsExpandTrigger="<Nop>"
+" navigation conf
+" Go to tab by number
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
+" navigation confend
+
+" fzf configuration
+nnoremap <C-p> :FZF<CR>
+nnoremap <Leader>t :BTags<CR>
+nnoremap <Leader>T :Tags<CR>
+
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-i': 'split',
+  \ 'ctrl-s': 'vsplit'
+  \}
+
+" fzf configuration end
+
+"coc conf
+"Use <Tab> and <S-Tab> to navigate the completion list:
+
+inoremap <expr> <Tab> pumvisible() ? "\<Down>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<Up>" : "\<S-Tab>"
+"coc confend
+
+" nvim-toogle-terminal conf
+nnoremap <silent> <C-z> :ToggleTerminal<Enter>
+tnoremap <silent> <C-z> <C-\><C-n>:ToggleTerminal<Enter>
+nnoremap <silent> <C-x> :ToggleTabTerminal<Enter>
+tnoremap <silent> <C-x> <C-\><C-n>:ToggleTabTerminal<Enter>
+
+tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
+" confend
 
 " Own commands
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-
+inoremap <C-e> <C-o>$
 
