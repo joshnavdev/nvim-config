@@ -135,9 +135,18 @@ let g:fzf_action = {
 
 "coc conf
 "Use <Tab> and <S-Tab> to navigate the completion list:
-
 inoremap <expr> <Tab> pumvisible() ? "\<Down>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<Up>" : "\<S-Tab>"
+
+function! s:show_documentation()
+  if (index(['vim', 'help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+nnoremap <silent> K :call <SID>show_documentation()<CR>
 "coc confend
 
 " nvim-toogle-terminal conf
