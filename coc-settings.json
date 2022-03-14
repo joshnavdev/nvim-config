@@ -1,5 +1,5 @@
 {
- "coc.preferences.formatOnSaveFiletypes": [
+  "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "typescript",
     "typescriptreact",
@@ -15,5 +15,5 @@
     "typescript.tsx"
   ],
   "coc.preferences.diagnostic.virtualText": true,
-  "diagnostic.displayByAle": true
-} 
+  "diagnostic.displayByAle": false
+}
