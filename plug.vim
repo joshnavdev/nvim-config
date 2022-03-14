@@ -7,8 +7,9 @@ call plug#begin()
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'cohama/lexima.vim'
-" Plug 'dracula/vim',{'as': 'dracula'}
-Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'dracula/vim',{'as': 'dracula'}
+" Plug 'sonph/onehalf', { 'rtp': 'vim' }
+" Plug 'morhetz/gruvbox'
 
 if has("nvim")
 " Language Client

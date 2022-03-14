@@ -1,4 +1,4 @@
-"scrooloose Fundamentals "{{{
+" Fundamentals "{{{
 " ---------------------------------------------------------------------
 set noerrorbells
 set sw=2
@@ -94,19 +94,20 @@ if exists("&winblend")
   set winblend=0
   set wildoptions=pum
   set pumblend=6
-  set background=dark
 endif
 
 syntax on
 set t_Co=256
 set cursorline
-colorscheme onehalfdark
-
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
+colorscheme dracula
+" let g:gruvbox_contrast_dark = "hard"
+" colorscheme gruvbox
+" colorscheme onehalfdark
 "}}}
 
 " Extras "{{{
