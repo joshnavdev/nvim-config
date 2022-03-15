@@ -9,7 +9,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'cohama/lexima.vim'
 Plug 'dracula/vim',{'as': 'dracula'}
 " Plug 'sonph/onehalf', { 'rtp': 'vim' }
-" Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 
 if has("nvim")
 " Language Client
@@ -26,6 +26,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 Plug 'christoomey/vim-tmux-navigator' " Para mejorar la navegacion entre paneles
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-lualine/lualine.nvim'
 endif
 
 call plug#end()

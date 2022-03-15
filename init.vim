@@ -104,9 +104,9 @@ if exists('+termguicolors')
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
-colorscheme dracula
-" let g:gruvbox_contrast_dark = "hard"
-" colorscheme gruvbox
+" colorscheme dracula
+let g:gruvbox_contrast_dark = "hard"
+colorscheme gruvbox
 " colorscheme onehalfdark
 "}}}
 
