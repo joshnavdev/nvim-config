@@ -10,6 +10,7 @@ Plug 'cohama/lexima.vim'
 Plug 'dracula/vim',{'as': 'dracula'}
 " Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'morhetz/gruvbox'
+Plug 'overcache/NeoSolarized'
 
 if has("nvim")
 " Language Client

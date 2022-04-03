@@ -80,34 +80,35 @@ runtime ./maps.vim
 " ---------------------------------------------------------------------
 
 " true color
-" if exists("&termguicolors") && exists("&winblend")
-  " syntax enable
-  " set termguicolors
-  " set winblend=0
-  " set wildoptions=pum
-  " set pumblend=5
-  " set background=dark
-  " " Use NeoSolarized
-  " colorscheme dracula
-" endif
-if exists("&winblend")
+if exists("&termguicolors") && exists("&winblend")
+  syntax enable
+  set termguicolors
   set winblend=0
   set wildoptions=pum
-  set pumblend=6
-endif
+  set pumblend=5
+  set background=dark
+  " " Use NeoSolarized
+  let g:neosolarized_italic = 1
+  set t_Co=256
+  set cursorline
 
-syntax on
-set t_Co=256
-set cursorline
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
 endif
-" colorscheme dracula
-let g:gruvbox_contrast_dark = "hard"
-colorscheme gruvbox
+" if exists("&winblend")
+  " set winblend=0
+  " set wildoptions=pum
+  " set pumblend=6
+" endif
+
+" if exists('+termguicolors')
+  " let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  " let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  " set termguicolors
+" endif
+" " colorscheme dracula
+" let g:gruvbox_contrast_dark = "hard"
+" colorscheme gruvbox
 " colorscheme onehalfdark
+colorscheme NeoSolarized
 "}}}
 
 " Extras "{{{
