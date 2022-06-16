@@ -8,9 +8,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'cohama/lexima.vim'
 Plug 'dracula/vim',{'as': 'dracula'}
-" Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'morhetz/gruvbox'
 Plug 'overcache/NeoSolarized'
+Plug 'rakr/vim-one'
 
 if has("nvim")
 " Language Client
