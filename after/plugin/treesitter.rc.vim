@@ -6,8 +6,7 @@ endif
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
   -- One of "all", "maintained" (parsers with maintainers), or a list of languages
-  ensure_installed = "maintained",
-
+  ensure_installed =  { "javascript", "typescript", "lua", "go" },
   -- Install languages synchronously (only applied to `ensure_installed`)
   sync_install = false,
 

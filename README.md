@@ -53,3 +53,15 @@ Se instalaran todos los plugins necesarios para la configuracion de NeoVim.
 ### Configuracion extras
 
 En caso de no ver los iconos en el nerdtree se debera instalar una fuente que tenga incluido estos, por ejemplo https://gist.github.com/romkatv/aa7a70fe656d8b655e3c324eb10f6a8b
+
+### CocConfiguration
+
+Aunque deberia instarse por su cuenta aveces es necesario ingresar el comando :CocInstall coc-eslint y/o otra linter que desees
+
+### nvim-treesitter
+
+Te permite tener un mejor highlight en tu codigo, en caso que surga algun problema es porque probablemente no tienes el compilador de cc instalado para ellos hacer lo siguiente
+
+```shell
+sudo apt install build-essential
+```

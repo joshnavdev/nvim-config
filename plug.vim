@@ -16,7 +16,7 @@ Plug 'rakr/vim-one'
 if has("nvim")
 " Language Client
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-eslint']
 Plug 'rhysd/git-messenger.vim' "Show git commit information for current line using <leader>gm or try to use :Git Blame
 Plug 'preservim/nerdtree' " Arbol de directons con <Leder>nt
 Plug 'ryanoasis/vim-devicons' " Para mostrar mejores iconos, bug en wsl2 https://github.com/ryanoasis/vim-devicons/issues/366#issuecomment-840235070
