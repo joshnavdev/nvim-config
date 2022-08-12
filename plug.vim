@@ -30,6 +30,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator' " Para mejorar la navegacion entre paneles
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lualine/lualine.nvim'
+
+" Para TODO comments
+Plug 'nvim-lua/plenary.nvim'
+Plug 'folke/todo-comments.nvim'
+
 endif
 
 call plug#end()
