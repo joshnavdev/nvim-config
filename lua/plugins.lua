@@ -49,4 +49,9 @@ packer.startup(function(use)
   use 'tpope/vim-fugitive'
 
   use "b0o/schemastore.nvim" -- JSON SchemaStore
+
+  use "terrortylor/nvim-comment" -- commenter
+
+  use 'folke/lsp-colors.nvim' -- creates missing LSP diagnostics highlight groups for color schemes
+
 end)
