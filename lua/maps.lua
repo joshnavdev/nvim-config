@@ -13,14 +13,14 @@ keymap.set('n', '<Leader>q', ':q<CR>')
 keymap.set('n', '<Leader>te', ':tabedit<CR>')
 
 -- Split window
-keymap.set('n', 'ss', ':split<Return><C-w>w')
-keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
+keymap.set('n', '<C-s><C-s>', ':split<Return><C-w>w')
+keymap.set('n', '<C-s><C-v>', ':vsplit<Return><C-w>w')
 
 -- Move window
-keymap.set('', '<C-h>', '<C-w>h')
-keymap.set('', '<C-j>', '<C-w>j')
-keymap.set('', '<C-k>', '<C-w>k')
-keymap.set('', '<C-l>', '<C-w>l')
+-- keymap.set('n', '<C-h>', '<C-w>h')
+-- keymap.set('n', '<C-j>', '<C-w>j')
+-- keymap.set('n', '<C-k>', '<C-w>k')
+-- keymap.set('n', '<C-l>', '<C-w>l')
 
 -- Resize window
 keymap.set('n', '<C-w><left>', '<C-w><')
@@ -39,3 +39,6 @@ keymap.set('n', '<Leader>7', '7gt')
 keymap.set('n', '<Leader>8', '8gt')
 keymap.set('n', '<Leader>9', '9gt')
 keymap.set('n', '<Leader>0', ':tablast<CR>')
+
+-- Writing improve maps
+keymap.set('i', '<C-e>', '<C-o>$')

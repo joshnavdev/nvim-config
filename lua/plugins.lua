@@ -54,4 +54,7 @@ packer.startup(function(use)
 
   use 'folke/lsp-colors.nvim' -- creates missing LSP diagnostics highlight groups for color schemes
 
+
+  use { "alexghergh/nvim-tmux-navigation" } -- Navigate between windows
+
 end)
