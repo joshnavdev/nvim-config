@@ -41,6 +41,10 @@ nvim_lsp.sumneko_lua.setup {
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 nvim_lsp.jsonls.setup { on_attach = on_attach, capabilities = capabilities }
 
+-- css
+nvim_lsp.cssls.setup {
+  on_attach = on_attach, capabilities = capabilities
+}
 
 -- tailwindcss
 nvim_lsp.tailwindcss.setup { on_attach = on_attach, capabilities = capabilities }
