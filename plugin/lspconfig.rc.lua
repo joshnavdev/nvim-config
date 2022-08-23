@@ -48,3 +48,8 @@ nvim_lsp.cssls.setup {
 
 -- tailwindcss
 nvim_lsp.tailwindcss.setup { on_attach = on_attach, capabilities = capabilities }
+
+-- graphql
+nvim_lsp.graphql.setup {
+  on_attach = on_attach, capabilities = capabilities
+}
