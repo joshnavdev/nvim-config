@@ -25,3 +25,7 @@
   - terrortylor/nvim-comment: Commenter
   - alexghergh/nvim-tmux-navigation: Navigate between windows
 
+### Setting up
+
+You only have to clone this repo into ~/.config/nvim/ folder and run PackerSync the first time to enter to NeoVim.
+
