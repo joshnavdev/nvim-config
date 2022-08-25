@@ -37,4 +37,32 @@ packer.startup(function(use)
 
   use "terrortylor/nvim-comment" -- commenter
 
+  -- LSP configuration and more
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+  }
+
+  use 'glepnir/lspsaga.nvim' -- LSP UIs
+
+  use {
+    'jose-elias-alvarez/null-ls.nvim', -- eslint linter
+    requires = { 'nvim-lua/plenary.nvim'}
+  }
+
+  use 'MunifTanjim/prettier.nvim' -- prettier formatting
+
+  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+  use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
+  use 'L3MON4D3/LuaSnip' -- Snippets plugin
+  use 'onsails/lspkind-nvim' -- vscoder-like pictograms
+
+  use 'lewis6991/gitsigns.nvim' -- git change ui
+
+  use 'dinhhuy258/git.nvim' -- fork git blame & browser
+  use 'tpope/vim-fugitive'
+
+  use "b0o/schemastore.nvim" -- json schemas to use with lspconfig
 end)

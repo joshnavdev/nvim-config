@@ -27,5 +27,6 @@
 
 ### Setting up
 
-You only have to clone this repo into ~/.config/nvim/ folder and run PackerSync the first time to enter to NeoVim.
+- You only have to clone this repo into ~/.config/nvim/ folder and run PackerSync the first time to enter to NeoVim.
+- You must install [eslint_d](https://github.com/mantoni/eslint_d.js/) and [prettierd](https://github.com/fsouza/prettierd) dependencies globally.
 
