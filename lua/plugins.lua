@@ -10,12 +10,12 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim' -- To use packer
 
   -- themes
-  use {
-    'svrana/neosolarized.nvim', -- Default theme
-    requires = { 'tjdevries/colorbuddy.nvim' } -- Required for customization
-  }
-  use "EdenEast/nightfox.nvim" -- Good themes
-  use 'folke/tokyonight.nvim' -- tokyo themes
+  -- use {
+  --   'svrana/neosolarized.nvim', -- Default theme
+  --   requires = { 'tjdevries/colorbuddy.nvim' } -- Required for customization
+  -- }
+  -- use "EdenEast/nightfox.nvim" -- Good themes
+  -- use 'folke/tokyonight.nvim' -- tokyo themes
 
   use {
     'nvim-treesitter/nvim-treesitter', -- highlights

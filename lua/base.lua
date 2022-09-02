@@ -44,6 +44,3 @@ vim.opt.formatoptions:append { 'r' }
 
 -- Own config
 vim.wo.colorcolumn = "120"
-
--- Add finish directory to runtimepath
-vim.opt.rtp:append(vim.fn.stdpath "config" .. "/finish")
