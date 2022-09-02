@@ -4,8 +4,6 @@ if (not status) then
   return
 end
 
-vim.lsp.set_log_level("debug")
-
 local protocol = require('vim.lsp.protocol')
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
