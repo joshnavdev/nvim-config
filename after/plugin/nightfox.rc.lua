@@ -14,5 +14,3 @@ n.setup({
     }
   }
 })
-
-vim.cmd('colorscheme nightfox')
