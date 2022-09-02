@@ -16,6 +16,7 @@ packer.startup(function(use)
   -- }
   -- use "EdenEast/nightfox.nvim" -- Good themes
   -- use 'folke/tokyonight.nvim' -- tokyo themes
+  use 'themercorp/themer.lua'
 
   use {
     'nvim-treesitter/nvim-treesitter', -- highlights
