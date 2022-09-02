@@ -9,10 +9,13 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
   use 'wbthomason/packer.nvim' -- To use packer
 
+  -- themes
   use {
     'svrana/neosolarized.nvim', -- Default theme
     requires = { 'tjdevries/colorbuddy.nvim' } -- Required for customization
   }
+  use "EdenEast/nightfox.nvim" -- Good themes
+  use 'folke/tokyonight.nvim' -- tokyo themes
 
   use {
     'nvim-treesitter/nvim-treesitter', -- highlights
@@ -30,7 +33,7 @@ packer.startup(function(use)
 
   use {
     'nvim-telescope/telescope.nvim', -- Telescope with file browser
-    requires = { {'nvim-lua/plenary.nvim'}, {'nvim-telescope/telescope-file-browser.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' }, { 'nvim-telescope/telescope-file-browser.nvim' } }
   }
 
   use 'akinsho/nvim-bufferline.lua' -- tabs
@@ -48,7 +51,7 @@ packer.startup(function(use)
 
   use {
     'jose-elias-alvarez/null-ls.nvim', -- eslint linter
-    requires = { 'nvim-lua/plenary.nvim'}
+    requires = { 'nvim-lua/plenary.nvim' }
   }
 
   use 'MunifTanjim/prettier.nvim' -- prettier formatting
