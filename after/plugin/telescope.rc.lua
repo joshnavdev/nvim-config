@@ -44,10 +44,15 @@ telescope.setup {
         },
       },
     },
+    themes = {
+      theme = 'dropdown',
+      initial_mode = 'normal'
+    }
   },
 }
 
 telescope.load_extension("file_browser")
+telescope.load_extension("themes")
 
 vim.keymap.set('n', '<C-p>',
   function()
@@ -70,6 +75,7 @@ end)
 vim.keymap.set('n', ';e', function()
   builtin.diagnostics()
 end)
+vim.keymap.set('n', '<Leader>th', ':Telescope themes<CR>')
 vim.keymap.set("n", "<Leader>nt", function() -- nt for NerdTree (old file browser)
   telescope.extensions.file_browser.file_browser({
     path = "%:p:h",
