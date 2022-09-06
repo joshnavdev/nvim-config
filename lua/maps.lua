@@ -36,3 +36,12 @@ keymap.set('n', '<Leader>0', ':tablast<CR>')
 
 -- Writing improve maps
 keymap.set('i', '<C-e>', '<C-o>$')
+
+-- Reload nvim config
+keymap.set('n', '<Leader>x', ':w<CR>:source %<CR>')
+
+-- Plenary
+keymap.set('n', '<leader>pt', '<Plug>PlenaryTestFile')
+
+-- Test
+keymap.set("n", "<Leader>zz", ":echo test")

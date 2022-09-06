@@ -69,4 +69,7 @@ packer.startup(function(use)
   use 'tpope/vim-fugitive'
 
   use "b0o/schemastore.nvim" -- json schemas to use with lspconfig
+
+  -- Local plugins
+  use '/Users/joshua.navarro/workplace/projects/nvim/plugins/stackmap.nvim'
 end)

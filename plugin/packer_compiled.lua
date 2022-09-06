@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/schemastore.nvim",
     url = "https://github.com/b0o/schemastore.nvim"
   },
+  ["stackmap.nvim"] = {
+    loaded = true,
+    path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/stackmap.nvim",
+    url = "/Users/joshua.navarro/workplace/projects/nvim/plugins/stackmap.nvim"
+  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
@@ -198,6 +203,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["themer.lua"] = {
+    loaded = true,
+    path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/themer.lua",
+    url = "https://github.com/themercorp/themer.lua"
   },
   ["vim-fugitive"] = {
     loaded = true,
