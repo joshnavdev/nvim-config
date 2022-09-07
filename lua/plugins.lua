@@ -70,6 +70,5 @@ packer.startup(function(use)
 
   use "b0o/schemastore.nvim" -- json schemas to use with lspconfig
 
-  -- Local plugins
-  use '/Users/joshua.navarro/workplace/projects/nvim/plugins/stackmap.nvim'
+  use "f-person/auto-dark-mode.nvim" -- change automaticaly themes for macOS theme mode
 end)
