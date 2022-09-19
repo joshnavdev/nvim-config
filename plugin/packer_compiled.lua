@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-dark-mode.nvim"] = {
+    loaded = true,
+    path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/auto-dark-mode.nvim",
+    url = "https://github.com/f-person/auto-dark-mode.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -154,6 +159,11 @@ _G.packer_plugins = {
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-terminal"] = {
+    loaded = true,
+    path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/nvim-terminal",
+    url = "https://github.com/s1n7ax/nvim-terminal"
+  },
   ["nvim-tmux-navigation"] = {
     loaded = true,
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/nvim-tmux-navigation",
@@ -193,11 +203,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/schemastore.nvim",
     url = "https://github.com/b0o/schemastore.nvim"
-  },
-  ["stackmap.nvim"] = {
-    loaded = true,
-    path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/stackmap.nvim",
-    url = "/Users/joshua.navarro/workplace/projects/nvim/plugins/stackmap.nvim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
