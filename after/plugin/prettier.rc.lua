@@ -2,7 +2,7 @@ local status, prettier = pcall(require, "prettier")
 if (not status) then return end
 
 prettier.setup({
-  bin = 'prettierd', -- or `prettierd`
+  bin = 'prettier', -- or `prettierd`
   filetypes = {
     "css",
     "graphql",
