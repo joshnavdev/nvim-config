@@ -63,3 +63,8 @@ nvim_lsp.jsonls.setup {
     }
   }
 }
+
+-- CSS
+nvim_lsp.cssls.setup {
+  capabilities = capabilities,
+}

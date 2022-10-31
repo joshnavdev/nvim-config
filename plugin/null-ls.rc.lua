@@ -7,6 +7,7 @@ null_ls.setup({
     null_ls.builtins.diagnostics.eslint_d.with({
       diagnostics_format = "[#{c}] #{m} (#{s})"
     }),
-    null_ls.builtins.diagnostics.jsonlint
+    null_ls.builtins.diagnostics.jsonlint,
+    null_ls.builtins.diagnostics.stylelint,
   }
 })
