@@ -2,7 +2,7 @@ local status, themer = pcall(require, 'themer')
 if (not status) then return end
 
 themer.setup({
-  colorscheme = 'catppuccin',
+  colorscheme = 'darknight',
   transparent = false,
   styles = {
     comment = { style = 'italic' },

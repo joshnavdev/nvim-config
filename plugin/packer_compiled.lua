@@ -159,11 +159,6 @@ _G.packer_plugins = {
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-terminal"] = {
-    loaded = true,
-    path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/nvim-terminal",
-    url = "https://github.com/s1n7ax/nvim-terminal"
-  },
   ["nvim-tmux-navigation"] = {
     loaded = true,
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/nvim-tmux-navigation",
@@ -183,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  nvterm = {
+    loaded = true,
+    path = "/Users/joshua.navarro/.local/share/nvim/site/pack/packer/start/nvterm",
+    url = "https://github.com/NvChad/nvterm"
   },
   ["packer.nvim"] = {
     loaded = true,

@@ -7,7 +7,8 @@ end
 local protocol = require('vim.lsp.protocol')
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+-- capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 
 -- Use an on_attach function to only map the following keys
@@ -23,14 +24,14 @@ local on_attach = function(client, bufnr)
 end
 
 nvim_lsp.tsserver.setup {
-  on_attach = on_attach,
+  -- on_attach = on_attach,
   capabilities = capabilities,
 }
 
 -- sumneko_lua
 -- required: Install lua-language-server
 nvim_lsp.sumneko_lua.setup {
-  on_attach = on_attach,
+  -- on_attach = on_attach,
   settings = {
     Lua = {
       runtime = {
@@ -55,6 +56,7 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 local schemas = require 'schemastore'.json.schemas()
 
 nvim_lsp.jsonls.setup {
+  -- on_attach = on_attach,
   capabilities = capabilities,
   settings = {
     json = {
@@ -66,5 +68,6 @@ nvim_lsp.jsonls.setup {
 
 -- CSS
 nvim_lsp.cssls.setup {
+  -- on_attach = on_attach,
   capabilities = capabilities,
 }
