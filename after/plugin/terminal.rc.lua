@@ -1,8 +1,6 @@
 local status, nvterm = pcall(require, 'nvterm')
 if (not status) then return end
 
-vim.o.shell = '/opt/homebrew/bin/zsh'
-
 nvterm.setup({
   terminals = {
     shell = vim.o.shell,
