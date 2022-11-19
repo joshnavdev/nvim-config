@@ -73,4 +73,6 @@ packer.startup(function(use)
   use "f-person/auto-dark-mode.nvim" -- change automaticaly themes for macOS theme mode
 
   use 'NvChad/nvterm'
+
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' } -- Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
 end)
