@@ -75,4 +75,7 @@ packer.startup(function(use)
   use 'NvChad/nvterm'
 
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' } -- Single tabpage interface for easily cycling through diffs for all modified files for any git rev.
+
+  -- Local plugins
+  use '/Users/joshua.navarro/workplace/projects/nvim/plugins/jestjs.nvim'
 end)

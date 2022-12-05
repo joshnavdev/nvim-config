@@ -44,3 +44,7 @@ vim.opt.formatoptions:append { 'r' }
 
 -- Own config
 vim.wo.colorcolumn = "120"
+
+-- astro config
+vim.cmd[[au BufReadPost,BufNewFile *.astro setfiletype astro]]
+
