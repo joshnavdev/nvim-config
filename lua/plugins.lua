@@ -78,4 +78,6 @@ packer.startup(function(use)
 
   -- Local plugins
   use '/Users/joshua.navarro/workplace/projects/nvim/plugins/jestjs.nvim'
+  use 'joshuanr5/indentation-multiline.nvim'
+  -- use '/Users/joshua.navarro/workplace/projects/nvim/plugins/indentation-multiline.nvim'
 end)
