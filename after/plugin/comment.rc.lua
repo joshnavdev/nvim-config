@@ -4,5 +4,5 @@ if (not status) then return end
 comment.setup {
   marker_padding = true,
   line_mapping = "<Leader>cc",
-  operator_mapping = "<Leader>c<Leader>"
+  operator_mapping = "<Leader>c"
 }
