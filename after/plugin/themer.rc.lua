@@ -7,7 +7,8 @@ themer.setup({
   styles = {
     comment = { style = 'italic' },
     keyword = { style = 'italic,bold' },
-  }
+  },
+  enable_installer = true,
 })
 
 -- vim.cmd[[highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red]]
