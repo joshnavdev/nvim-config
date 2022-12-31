@@ -4,5 +4,12 @@ P = function(v)
   return v
 end
 
-DEFAULT_LIGHT_THEME = "themer_rose_pine_dawn"
-DEFAULT_DARK_THEME = "themer_catppuccin"
+HAS = function(x)
+  return vim.fn.has(x)
+end
+
+IS_MAC = HAS "macunix"
+IS_WIN = HAS "win32"
+
+DEFAULT_LIGHT_THEME = "dayfox"
+DEFAULT_DARK_THEME = "themer_darknight"

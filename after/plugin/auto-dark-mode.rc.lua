@@ -1,6 +1,10 @@
 local status, auto_dark_mode = pcall(require, "auto-dark-mode")
 if (not status) then return end
 
+if IS_WIN == 1 then
+  return
+end
+
 local set_mode = function(mode)
   local THEME = DEFAULT_DARK_THEME
 
@@ -18,9 +22,8 @@ local set_dark_mode = set_mode('dark')
 local set_light_mode = set_mode('light')
 
 auto_dark_mode.setup({
-  update_interval = 3000,
   set_dark_mode = set_dark_mode,
   set_light_mode = set_light_mode,
 })
 
--- auto_dark_mode.init()
+auto_dark_mode.init()
