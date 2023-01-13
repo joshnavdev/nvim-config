@@ -26,4 +26,4 @@ auto_dark_mode.setup({
   set_light_mode = set_light_mode,
 })
 
-auto_dark_mode.init()
+-- auto_dark_mode.init()
