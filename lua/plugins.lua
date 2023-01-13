@@ -48,7 +48,7 @@ packer.startup(function(use)
     "neovim/nvim-lspconfig",
   }
 
-  use 'glepnir/lspsaga.nvim' -- LSP UIs
+  use { "joshuanr5/lspsaga.nvim", branch = "legacy" } -- LSP UIs
 
   use {
     'jose-elias-alvarez/null-ls.nvim', -- eslint linter

@@ -3,13 +3,13 @@ if (not status) then return end
 
 saga.init_lsp_saga {
   finder_action_keys = {
-    open = "o",
+    open = {"o", "<CR>"},
     vsplit = "<C-v>",
     split = "<C-x>",
     tabe = "<C-t>",
     quit = "q",
-    scroll_down = "<C-f>",
-    scroll_up = "<C-b>", -- quit can be a table
+    -- scroll_down = "<C-f>",
+    -- scroll_up = "<C-b>", -- quit can be a table
   }
 }
 
