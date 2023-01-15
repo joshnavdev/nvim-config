@@ -14,7 +14,7 @@ keymap.set('n', '<Leader>te', ':tabedit<CR>')
 
 -- Split window
 keymap.set('n', '<C-s><C-x>', ':split<Return><C-w>w')
-keymap.set('n', '<C-s><C-v>', ':vsplit<Return><C-w>w')
+keymap.set('n', '<C-s><C-i>', ':vsplit<Return><C-w>w')
 
 -- Resize window
 keymap.set('n', '<C-w><left>', '<C-w><')

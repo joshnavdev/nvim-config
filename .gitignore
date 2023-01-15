@@ -65,4 +65,6 @@ tags
 # Persistent undo
 [._]*.un~
 
+plugin/packer_compiled.lua
+
 # End of https://www.toptal.com/developers/gitignore/api/lua,vim

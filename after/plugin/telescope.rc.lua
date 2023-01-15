@@ -13,7 +13,14 @@ telescope.setup {
   defaults = {
     mappings = {
       n = {
-        ["q"] = actions.close
+        ["q"] = actions.close,
+        ["<C-i>"] = actions.select_vertical,
+        ["<C-v>"] = actions.nop,
+      },
+      i = {
+        ["<Esc>"] = actions.close,
+        ["<C-i>"] = actions.select_vertical,
+        ["<C-v>"] = actions.nop,
       },
     },
     file_ignore_patterns = { "git/", "node_modules/", "dist/" },
